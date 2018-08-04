@@ -14,6 +14,7 @@ public class TaxCalculator {
     		if(empName.isEmpty()) {
     			throw new EmployeeNameInvalidException("The Employee name cannot be empty");
     		}
+		 //Showing the error message if name is empty
     		else {
     			if(empSal>=100000) {
     				taxAmount=empSal*0.08;
@@ -32,6 +33,7 @@ public class TaxCalculator {
     			}
     		}
     	 }
+	     //if employee is not an indian citizen
     	 else {
     		 throw new CountryNotValidException("The employee should be an Indian citizen for calculating Tax");
     	 }
